@@ -66,13 +66,13 @@ const Component = () => {
 };
 ```
 
-...TailwindCSS won't be able to detect any utility classes, because the actual name of the classes is only known at runtime.
+...TailwindCSS won't be able to detect it, because the actual name of the class is only known at runtime.
 
 The package right here lets you accomplish the things mentioned in the intro, while still letting TailwindCSS detect the utility classes upfront.
 
 ## Additional Options
 
-By default, `.util` matches utility classes against your defined constant by checking if one of them ends in `-[your-constant]`, where `[your-constant]` is the value you've passed as the first argument to `new TailwindConstant`.
+By default, `.util` matches utility classes against your defined constant by checking if one of them ends in the suffix `-[your-constant]`, where `[your-constant]` is the constant value you've passed as the first argument to `new TailwindConstant`.
 
 If you'd like to assert with a custom suffix, you can pass it like this:
 
@@ -91,7 +91,7 @@ const Component = () => {
 };
 ```
 
-As you can see above, this especially comes in handy if you need a utility class to be applied depending on some state.
+As you can see, this especially comes in handy when applying a utility class depending on some state.
 
 ## Author
 
