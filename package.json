@@ -1,5 +1,5 @@
 {
-  "name": "tailwindcss-conditions",
+  "name": "tailwindcss-constants",
   "version": "0.0.0",
   "description": "Apply TailwindCSS utilities only if they match a constant",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leo/tailwindcss-conditions.git"
+    "url": "git+https://github.com/leo/tailwindcss-constants.git"
   },
   "keywords": [
     "tailwindcss",
@@ -26,9 +26,9 @@
   "author": "leo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leo/tailwindcss-conditions/issues"
+    "url": "https://github.com/leo/tailwindcss-constants/issues"
   },
-  "homepage": "https://github.com/leo/tailwindcss-conditions#readme",
+  "homepage": "https://github.com/leo/tailwindcss-constants#readme",
   "devDependencies": {
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
