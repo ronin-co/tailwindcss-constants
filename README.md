@@ -2,7 +2,7 @@
 
 Applying utility classes provided by [TailwindCSS](https://tailwindcss.com) (like `bg-white`) conditionally doesn't require a lot of effort, because it's only a matter of enabling strings conditionally.
 
-For simple apps, that's usually enough. For more advanced ones, however, you might find yourself wanting to done one of the following things:
+For simple apps, that's usually enough. For more advanced ones, however, you might find yourself wanting to do one of the following things:
 
 - Share utility classes between multiple places in your code
 - Construct a utility class from a constant
