@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-conditions",
   "version": "0.0.0",
-  "description": "new",
+  "description": "Apply TailwindCSS utilities only if they match a constant",
   "main": "index.js",
   "scripts": {
     "build": "tsc index.ts",
