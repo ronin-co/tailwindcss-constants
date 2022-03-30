@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-constants",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Apply TailwindCSS utilities only if they match a constant",
   "main": "index.js",
   "scripts": {
