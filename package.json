@@ -1,0 +1,38 @@
+{
+  "name": "tailwindcss-conditions",
+  "version": "0.0.0",
+  "description": "new",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc index.ts",
+    "prepare": "husky install && npm run build"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo/tailwindcss-conditions.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "conditions",
+    "conditional",
+    "classes",
+    "utilities",
+    "class",
+    "names"
+  ],
+  "author": "leo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo/tailwindcss-conditions/issues"
+  },
+  "homepage": "https://github.com/leo/tailwindcss-conditions#readme",
+  "devDependencies": {
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "prettier": "2.6.1",
+    "typescript": "^4.6.3"
+  }
+}
