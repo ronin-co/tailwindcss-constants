@@ -1,4 +1,4 @@
-class TailwindCondition {
+class TailwindConstant {
   // Using `any` here will make sure the type is inherited
   // from the actual argument that is passed, since the argument
   // might either be a string or a number.
@@ -14,18 +14,20 @@ class TailwindCondition {
   }
 
   util(names, conditions?) {
-    const utils = names.split(' ');
+    const utils = names.split(" ");
     const match = this.suffix || `-${this.value}`;
 
     const validName = utils.find((util) => util.endsWith(match));
-    const conditionsMet = typeof conditions === 'undefined' ? true : conditions;
+    const conditionsMet = typeof conditions === "undefined" ? true : conditions;
 
     if (!validName) {
-      throw new Error(`Tailwind utilities "${names}" don't include "${match}" match.`);
+      throw new Error(
+        `Tailwind utilities "${names}" don't include "${match}" match.`
+      );
     }
 
     return conditionsMet ? names : null;
   }
 }
 
-export default TailwindCondition;
+export default TailwindConstant;
