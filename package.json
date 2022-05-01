@@ -3,10 +3,15 @@
   "version": "1.0.2",
   "description": "Apply TailwindCSS utilities only if they match a constant",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "build": "tsc index.ts",
+    "build": "tsc index.ts --declaration",
     "prepare": "husky install && npm run build"
   },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write --ignore-path .gitignore"
   },
