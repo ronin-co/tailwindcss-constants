@@ -20,7 +20,7 @@ npm install tailwindcss-constants --save
 Then invoke it from your application code:
 
 ```jsx
-import TailwindConstant from "tailwind-constants";
+import TailwindConstant from 'tailwindcss-constants';
 
 const transitionDuration == new TailwindConstant(300);
 
