@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ronin-new/tailwindcss-constants.git"
+    "url": "git+https://github.com/ronin-co/tailwindcss-constants.git"
   },
   "keywords": [
     "tailwindcss",
@@ -31,9 +31,9 @@
   "author": "leo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ronin-new/tailwindcss-constants/issues"
+    "url": "https://github.com/ronin-co/tailwindcss-constants/issues"
   },
-  "homepage": "https://github.com/ronin-new/tailwindcss-constants#readme",
+  "homepage": "https://github.com/ronin-co/tailwindcss-constants#readme",
   "devDependencies": {
     "husky": "7.0.4",
     "lint-staged": "12.4.1",
