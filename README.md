@@ -14,7 +14,7 @@ This package lets you accomplish all of those things with ease.
 First, install the package:
 
 ```bash
-npm install tailwindcss-constants --save
+npm install tailwindcss-constants
 ```
 
 Then invoke it from your application code:
@@ -31,7 +31,7 @@ const Component = () => {
       console.log('Test');
     }, transitionDuration.value);
   });
-  
+
   return <span class={transitionDuration.util('transition-colors duration-300')}>Test</span>;
 };
 ```
@@ -52,7 +52,7 @@ If you're applying a class name conditionally like so...
 
 ```js
 const Component = () => {
-  return <span class={someVariable && 'bg-black'}>Test</span>;
+  return <span class={someVariable && "bg-black"}>Test</span>;
 };
 ```
 
@@ -77,7 +77,7 @@ By default, `.util` matches utility classes against your defined constant by che
 If you'd like to assert with a custom suffix, you can pass it like this:
 
 ```jsx
-const darkBackground = new TailwindConstant(500, '-dark');
+const darkBackground = new TailwindConstant(500, "-dark");
 ```
 
 Now the second argument you've passed will be used instead of `-[your-constant]`.
@@ -87,7 +87,13 @@ Additionally, `.util` also allows for passing extra conditions as a second argum
 ```jsx
 const Component = () => {
   const [state, setState] = useState(null);
-  return <span class={transitionDuration.util('transition-colors duration-300', state)}>Test</span>;
+  return (
+    <span
+      class={transitionDuration.util("transition-colors duration-300", state)}
+    >
+      Test
+    </span>
+  );
 };
 ```
 
