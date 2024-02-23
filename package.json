@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "tsc index.ts --declaration",
+    "build": "bun build index.ts --outfile index.js && tsc index.ts --emitDeclarationOnly --declaration",
     "prepare": "husky install && npm run build"
   },
   "files": [
